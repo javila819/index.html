@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- This is a comment on my page -->
 		<!-- This is Julio's page -->
+		<style>
+		
+		h1 {
+			
+			font-size: 48px;
+			text-decoration: underline;
+			font-family: papyrus;
+			font-weight: bold;
+			margin-left: 10px;
+		}
+		
+		h2 {
+			
+			font-size: 36px;
+			text-decoration: underline;
+			font-family: garamond;
+			text-shadow: 5px 5px 5px black;
+		}
+		
+		li {
+			color:blue;
+		}
+		
+		.orange_text {
+			color: orange;
+		}
+		/* This makes text have small caps */
+		.small_cap_letter {
+			font-variant: small-caps;
+		}
+		
+		.large_text {
+			font-size: 48px;
+		}
+		
+		.doc-header {
+			width: 100%;
+			/* line width, line type, color */
+			border: 5px solid black;
+			margin: auto;
+		}
+		
+		.doc-body {
+			width: 100%;
+			color: crimson;
+			border: 5px solid crimson;
+		}
+		
+		.heavy-border {
+			border: 5 px dashed orange;
+			padding: 15px;
+			margin: 15px;
+		}
+		</style>
 	</head>
 	<body>
-		<h1>Favorite Food</h1>
-		<h2>Fruit</h2>
+	
+		<div>
+		<!-- the header div -->
+		<div class="doc-header">
+		
+			<h1 class="doc-header">Favorite Food</h1>
+		
+		</div>
+		<!-- the body div -->
+		<div class="doc-body">
+		
+		<h2 class="orange_text">Fruit</h2>
 		<!-- <p>Pumpkin, Apple, Pepper, and Banana</p> -->
 			
 			<ol>
@@ -15,22 +78,24 @@
 					<img src="pumpkin.jfif" alt="an orange pumpkin" width="200px">
 					</a>
 				</li>
-				<li><a href="https://en.wikipedia.org/wiki/Apple"target="_blank">Apple</a></li>
-				<li>Pepper</li>
-				<li>Banana</li>	
+				<li><span style="color: darkgoldenrod;"><a href="https://en.wikipedia.org/wiki/Apple"target="_blank">Apple</a></li>
+				<li><span style="color: blanchedalmond; font-size: 1em;">Pepper</span></li>
+				<li><span style="color: darkkhaki;">Banana</li>	
 				<li><a href="pumpkin.jfif"target="_blank"><img src="pumpkin.jfif" alt="an orange pumpkin" width="200px"></a></li>
 			</ol>
 			
-		<h2>Vegetables</h2>
+		<h2 style="color:green;">Vegetables</h2>
 		
 			<ul>
-				<li>Potato</li>
-				<li>Onion</li>
+				<li class="orange_text">Potato</li>
+				<li class="small_cap_letter">Onion</li>
+				<li<span class="orange_text, small_cap_letter" /span>Carrot</li>
 			
 			</ul>
 			
-			
+			<img src="pumpkin.jfif" alt="an orange pumpkin" width="200px">
+			<img src="pumpkin.jfif" alt="an orange pumpkin" width="200px">
 			
 	</body>
-	
+	</div>
 </html>
